@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pricetohpGraph.ChartController" prefWidth="600" prefHeight="400" style="-fx-background-color: #A7C1A8;">
+
+   <AnchorPane layoutX="15" layoutY="4" prefWidth="564" prefHeight="340" style="-fx-background-color: #FCEF91; -fx-background-radius: 10;">
+      <LineChart fx:id="chart" prefWidth="564" prefHeight="338" title="PRICE to HORSEPOWER RATIO" style="-fx-font-family: 'Lucida Sans Unicode'; -fx-font-size: 12;">
+         <xAxis>
+            <CategoryAxis fx:id="xAxis" label="Brand" side="BOTTOM" style="-fx-tick-label-font-size: 11;"/>
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="yAxis" label="Value" side="LEFT" upperBound="50000" style="-fx-tick-label-font-size: 11;"/>
+         </yAxis>
+      </LineChart>
+   </AnchorPane>
+
+   <AnchorPane layoutX="131" layoutY="347" prefWidth="339" prefHeight="42" style="-fx-background-color: #FCEF91; -fx-background-radius: 10;">
+      <Label text="Filter By:" layoutX="42" layoutY="16" style="-fx-font-family: 'Britannic Bold'; -fx-font-size: 12;"/>
+      <RadioButton fx:id="listPriceButton" text="Price" layoutX="113" layoutY="6" style="-fx-background-color: #F5F0CD; -fx-background-radius: 20; -fx-padding: 5; -fx-font-size: 12;"/>
+      <RadioButton fx:id="listHorsepowerButton" text="Horsepower" layoutX="216" layoutY="6" style="-fx-background-color: #F5F0CD; -fx-background-radius: 20; -fx-padding: 5; -fx-font-size: 12;"/>
+   </AnchorPane>
+
+   <Button fx:id="tableButton" text="Table" layoutX="520" layoutY="360" onAction="#onTableClicked" style="-fx-background-color: #F5F0CD; -fx-background-radius: 5; -fx-padding: 5 10; -fx-font-family: 'Lucida Sans Unicode'; -fx-font-size: 12;"/>
+</AnchorPane>
