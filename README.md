@@ -5,6 +5,10 @@ Developed a JavaFX application that visualizes the relationship between car hors
 > Initial Screen, the graph showing the data in the database.
 
 
+
+
+
+
 ![image](https://github.com/user-attachments/assets/9704127b-117b-432d-857e-615da9c4937a)
 > Second Scene, showing the table with the cars data from the database.
 
